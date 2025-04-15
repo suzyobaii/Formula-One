@@ -21,5 +21,5 @@ df_all = pd.merge(df_all, df_2024, on='constructor', how='outer')
 df_all['Predicted_2025_Points'] = ""
 
 # 5. Save the merged DataFrame to a CSV
-df_all.to_csv("ConstructionPrediction.csv", index=False)
+df_all.to_csv("ConstructorPrediction.csv", index=False)
 print("Combined CSV created: ConstructorPrediction.csv")
