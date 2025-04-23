@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tracks</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="{{ url_for('homepage') }}">
+        <img src="{{ url_for('static', filename='f1-logo.png') }}" alt="F1 Logo">
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('homepage') }}">Home</a></li>
+        <li><a href="{{ url_for('teams') }}">Teams</a></li>
+        <li><a href="{{ url_for('cars') }}">Cars</a></li>
+        <li><a href="{{ url_for('tracks') }}">Tracks</a></li>
+        <li><a href="{{ url_for('predictor') }}">Predictor</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <div class="content-container">
+    <h1 class="dashboard-title">F1 Tracks</h1>
+    <div class="track-grid">
+
+        <!-- Australian Grand Prix -->
+        <div class="track-card">
+            <img src="{{ url_for('static', filename='images/albert-park.jpg') }}" alt="Australian GP">
+            <div class="track-info">
+                <div class="track-text">
+                    <h3>Australian Grand Prix</h3>
+                    <p>Location: Melbourne, Australia</p>
+                    <p>Length: 5.278 km</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chinese Grand Prix -->
+        <div class="track-card">
+            <img src="{{ url_for('static', filename='images/shanghai.jpg') }}" alt="Chinese GP">
+            <div class="track-info">
+                <div class="track-text">
+                    <h3>Chinese Grand Prix</h3>
+                    <p>Location: Shanghai, China</p>
+                    <p>Length: 5.451 km</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Japanese Grand Prix -->
+        <div class="track-card">
+            <img src="{{ url_for('static', filename='images/suzuka.jpg') }}" alt="Japanese GP">
+            <div class="track-info">
+                <div class="track-text">
+                    <h3>Japanese Grand Prix</h3>
+                    <p>Location: Suzuka, Japan</p>
+                    <p>Length: 5.807 km</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bahrain Grand Prix -->
+        <div class="track-card">
+            <img src="{{ url_for('static', filename='images/Bahrain.jpg') }}" alt="Bahrain GP">
+            <div class="track-info">
+                <div class="track-text">
+                    <h3>Bahrain Grand Prix</h3>
+                    <p>Location: Sakhir, Bahrain</p>
+                    <p>Length: 5.412 km</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Saudi Arabian Grand Prix -->
+        <div class="track-card">
+            <img src="{{ url_for('static', filename='images/jeddah.jpg') }}" alt="Saudi Arabian GP">
+            <div class="track-info">
+                <div class="track-text">
+                    <h3>Saudi Arabian Grand Prix</h3>
+                    <p>Location: Jeddah, Saudi Arabia</p>
+                    <p>Length: 6.174 km</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Miami Grand Prix -->
+        <div class="track-card">
+            <img src="{{ url_for('static', filename='images/miami.jpg') }}" alt="Miami GP">
+            <div class="track-info">
+                <div class="track-text">
+                    <h3>Miami Grand Prix</h3>
+                    <p>Location: Miami, USA</p>
+                    <p>Length: 5.412 km</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Emilia Romagna Grand Prix -->
+        <div class="track-card">
+            <img src="{{ url_for('static', filename='images/imola.jpg') }}" alt="Emilia Romagna GP">
+            <div class="track-info">
+                <div class="track-text">
+                    <h3>Emilia Romagna Grand Prix</h3>
+                    <p>Location: Imola, Italy</p>
+                    <p>Length: 4.909 km</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Monaco Grand Prix -->
+        <div class="track-card">
+            <img src="{{ url_for('static', filename='images/monaco.jpg') }}" alt="Monaco GP">
+            <div class="track-info">
+                <div class="track-text">
+                    <h3>Monaco Grand Prix</h3>
+                    <p>Location: Monte Carlo, Monaco</p>
+                    <p>Length: 3.337 km</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Spanish Grand Prix -->
+        <div class="track-card">
+            <img src="{{ url_for('static', filename='images/catalunya.jpg') }}" alt="Spanish GP">
+            <div class="track-info">
+                <div class="track-text">
+                    <h3>Spanish Grand Prix</h3>
+                    <p>Location: Montmeló, Spain</p>
+                    <p>Length: 4.657 km</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Canadian Grand Prix -->
+        <div class="track-card">
+            <img src="{{ url_for('static', filename='images/gilles-villeneuve.jpg') }}" alt="Canadian GP">
+            <div class="track-info">
+                <div class="track-text">
+                    <h3>Canadian Grand Prix</h3>
+                    <p>Location: Montreal, Canada</p>
+                    <p>Length: 4.361 km</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Austrian Grand Prix -->
+        <div class="track-card">
+            <img src="{{ url_for('static', filename='images/red-bull-ring.jpg') }}" alt="Austrian GP">
+            <div class="track-info">
+                <div class="track-text">
+                    <h3>Austrian Grand Prix</h3>
+                    <p>Location: Spielberg, Austria</p>
+                    <p>Length: 4.318 km</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- British Grand Prix -->
+        <div class="track-card">
+            <img src="{{ url_for('static', filename='images/silverstone.jpg') }}" alt="British GP">
+            <div class="track-info">
+                <div class="track-text">
+                    <h3>British Grand Prix</h3>
+                    <p>Location: Silverstone, UK</p>
+                    <p>Length: 5.891 km</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Belgian Grand Prix -->
+        <div class="track-card">
+            <img src="{{ url_for('static', filename='images/spa.jpg') }}" alt="Belgian GP">
+            <div class="track-info">
+                <div class="track-text">
+                    <h3>Belgian Grand Prix</h3>
+                    <p>Location: Stavelot, Belgium</p>
+                    <p>Length: 7.004 km</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hungarian Grand Prix -->
+        <div class="track-card">
+            <img src="{{ url_for('static', filename='images/hungaroring.jpg') }}" alt="Hungarian GP">
+            <div class="track-info">
+                <div class="track-text">
+                    <h3>Hungarian Grand Prix</h3>
+                    <p>Location: Mogyoród, Hungary</p>
+                    <p>Length: 4.381 km</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dutch Grand Prix -->
+        <div class="track-card">
+            <img src="{{ url_for('static', filename='images/zandvoort.jpg') }}" alt="Dutch GP">
+            <div class="track-info">
+                <div class="track-text">
+                    <h3>Dutch Grand Prix</h3>
+                    <p>Location: Zandvoort, Netherlands</p>
+                    <p>Length: 4.259 km</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Italian Grand Prix -->
+        <div class="track-card">
+            <img src="{{ url_for('static', filename='images/monza.jpg') }}" alt="Italian GP">
+            <div class="track-info">
+                <div class="track-text">
+                    <h3>Italian Grand Prix</h3>
+                    <p>Location: Monza, Italy</p>
+                    <p>Length: 5.793 km</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Azerbaijan Grand Prix -->
+        <div class="track-card">
+            <img src="{{ url_for('static', filename='images/baku.jpg') }}" alt="Azerbaijan GP">
+            <div class="track-info">
+                <div class="track-text">
+                    <h3>Azerbaijan Grand Prix</h3>
+                    <p>Location: Baku, Azerbaijan</p>
+                    <p>Length: 6.003 km</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Singapore Grand Prix -->
+        <div class="track-card">
+            <img src="{{ url_for('static', filename='images/marina-bay.jpg') }}"alt="Singapore GP">
+            <div class="track-info">
+                <div class="track-text">
+                    <h3>Singapore Grand Prix</h3>
+                    <p>Location: Marina Bay, Singapore</p>
+                    <p>Length: 5.063 km</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- United States Grand Prix -->
+        <div class="track-card">
+            <img src="{{ url_for('static', filename='images/cota.jpg') }}" alt="United States GP">
+            <div class="track-info">
+                <div class="track-text">
+                    <h3>United States Grand Prix</h3>
+                    <p>Location: Austin, USA</p>
+                    <p>Length: 5.513 km</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mexico City Grand Prix -->
+        <div class="track-card">
+            <img src="{{ url_for('static', filename='images/mexico.jpg') }}" alt="Mexico City GP">
+            <div class="track-info">
+                <div class="track-text">
+                    <h3>Mexico City Grand Prix</h3>
+                    <p>Location: Mexico City, Mexico</p>
+                    <p>Length: 4.304 km</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- São Paulo Grand Prix -->
+        <div class="track-card">
+            <img src="{{ url_for('static', filename='images/interlagos.jpg') }}" alt="São Paulo GP">
+            <div class="track-info">
+                <div class="track-text">
+                    <h3>São Paulo Grand Prix</h3>
+                    <p>Location: São Paulo, Brazil</p>
+                    <p>Length: 4.309 km</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Las Vegas Grand Prix -->
+        <div class="track-card">
+            <img src="{{ url_for('static', filename='images/las-vegas.jpg') }}" alt="Las Vegas GP">
+            <div class="track-info">
+                <div class="track-text">
+                    <h3>Las Vegas Grand Prix</h3>
+                    <p>Location: Las Vegas, USA</p>
+                    <p>Length: 6.201 km</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Qatar Grand Prix -->
+        <div class="track-card">
+            <img src="{{ url_for('static', filename='images/losail.jpg') }}" alt="Qatar GP">
+            <div class="track-info">
+                <div class="track-text">
+                    <h3>Qatar Grand Prix</h3>
+                    <p>Location: Lusail, Qatar</p>
+                    <p>Length: 5.419 km</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Abu Dhabi Grand Prix -->
+        <div class="track-card">
+            <img src="{{ url_for('static', filename='images/yas-marina.jpg') }}" alt="Abu Dhabi GP">
+            <div class="track-info">
+                <div class="track-text">
+                    <h3>Abu Dhabi Grand Prix</h3>
+                    <p>Location: Abu Dhabi, UAE</p>
+                    <p>Length: 5.281 km</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <p>© 2025 Formula 1 Project</p>
+</footer>
+</body>
+</html>

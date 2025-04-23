@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cars</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="{{ url_for('homepage') }}">
+        <img src="{{ url_for('static', filename='images/f1-logo.png') }}" alt="F1 Logo">
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('homepage') }}">Home</a></li>
+        <li><a href="{{ url_for('teams') }}">Teams</a></li>
+        <li><a href="{{ url_for('cars') }}">Cars</a></li>
+        <li><a href="{{ url_for('tracks') }}">Tracks</a></li>
+        <li><a href="{{ url_for('predictor') }}">Predictor</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="content-container">
+    <h1 class="dashboard-title">F1 Cars 2025</h1>
+    <div class="teams-grid">
+        <!-- Alpine -->
+        <div class="team-card">
+            <div class="team-header">
+                <img src="{{ url_for('static', filename='images/alpine.png') }}" alt="Alpine Logo" class="team-logo">
+                <h2>Alpine</h2>
+            </div>
+            <div class="car-card">
+                <img src="{{ url_for('static', filename='images/alpine-car.jpg') }}" alt="Alpine AS24" class="car-image">
+                <h3>AS24</h3>
+                <div class="car-specs">
+                    <p><strong>Engine:</strong> Renault</p>
+                    <p>Alpine's new challenger with improved aerodynamics</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Aston Martin -->
+        <div class="team-card">
+            <div class="team-header">
+                <img src="{{ url_for('static', filename='images/astonmartin.png') }}" alt="Aston Martin Logo" class="team-logo">
+                <h2>Aston Martin</h2>
+            </div>
+            <div class="car-card">
+                <img src="{{ url_for('static', filename='images/astonmartin-car.jpg') }}" alt="Aston Martin AMR24" class="car-image">
+                <h3>AMR24</h3>
+                <div class="car-specs">
+                    <p><strong>Engine:</strong> Mercedes</p>
+                    <p>Aston Martin's latest challenger</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ferrari -->
+        <div class="team-card">
+            <div class="team-header">
+                <img src="{{ url_for('static', filename='images/ferrari.png') }}" alt="Ferrari Logo" class="team-logo">
+                <h2>Ferrari</h2>
+            </div>
+            <div class="car-card">
+                <img src="{{ url_for('static', filename='images/ferrari-car.jpg') }}" alt="Ferrari SF-24" class="car-image">
+                <h3>SF-24</h3>
+                <div class="car-specs">
+                    <p><strong>Engine:</strong> Ferrari</p>
+                    <p>New Ferrari challenger with improved reliability</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Haas -->
+        <div class="team-card">
+            <div class="team-header">
+                <img src="{{ url_for('static', filename='images/haas.png') }}" alt="Haas Logo" class="team-logo">
+                <h2>Haas F1 Team</h2>
+            </div>
+            <div class="car-card">
+                <img src="{{ url_for('static', filename='images/haas-car.jpg') }}" alt="Haas VF-24" class="car-image">
+                <h3>VF-24</h3>
+                <div class="car-specs">
+                    <p><strong>Engine:</strong> Ferrari</p>
+                    <p>Haas's dependable package for 2024</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- McLaren -->
+        <div class="team-card">
+            <div class="team-header">
+                <img src="{{ url_for('static', filename='images/mclaren.png') }}" alt="McLaren Logo" class="team-logo">
+                <h2>McLaren</h2>
+            </div>
+            <div class="car-card">
+                <img src="{{ url_for('static', filename='images/mclaren-car.jpg') }}" alt="McLaren MCL38" class="car-image">
+                <h3>MCL38</h3>
+                <div class="car-specs">
+                    <p><strong>Engine:</strong> Mercedes</p>
+                    <p>McLaren's contender for podium finishes</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mercedes -->
+        <div class="team-card">
+            <div class="team-header">
+                <img src="{{ url_for('static', filename='images/mercedes.png') }}" alt="Mercedes Logo" class="team-logo">
+                <h2>Mercedes</h2>
+            </div>
+            <div class="car-card">
+                <img src="{{ url_for('static', filename='images/mercedes-car.jpg') }}" alt="Mercedes W15" class="car-image">
+                <h3>W15</h3>
+                <div class="car-specs">
+                    <p><strong>Engine:</strong> Mercedes</p>
+                    <p>Mercedes' refined machine for 2024</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Red Bull Racing -->
+        <div class="team-card">
+            <div class="team-header">
+                <img src="{{ url_for('static', filename='images/redbull.png') }}" alt="Red Bull Racing Logo" class="team-logo">
+                <h2>Red Bull Racing</h2>
+            </div>
+            <div class="car-card">
+                <img src="{{ url_for('static', filename='images/redbull-car.jpg') }}" alt="Red Bull RB20" class="car-image">
+                <h3>RB20</h3>
+                <div class="car-specs">
+                    <p><strong>Engine:</strong> Honda RBPT</p>
+                    <p>Defending champion's car; evolution of the dominant RB19</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kick Sauber -->
+        <div class="team-card">
+            <div class="team-header">
+                <img src="{{ url_for('static', filename='images/stake.png' ) }}" alt="Kick Sauber Logo" class="team-logo">
+                <h2>Kick Sauber</h2>
+            </div>
+            <div class="car-card">
+                <img src="{{ url_for('static', filename='images/kicksauber-car.jpg' ) }}" alt="Stake C44" class="car-image">
+                <h3>C44</h3>
+                <div class="car-specs">
+                    <p><strong>Engine:</strong> Ferrari</p>
+                    <p>Kick Sauber new challenger</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Racing Bulls -->
+        <div class="team-card">
+            <div class="team-header">
+                <img src="{{ url_for('static', filename='images/visarb.png' ) }}" alt="Racing Bulls Logo" class="team-logo">
+                <h2>Racing Bulls</h2>
+            </div>
+            <div class="car-card">
+                <img src="{{ url_for('static', filename='images/racingbulls-car.jpg' ) }}" alt="VCARB 01" class="car-image">
+                <h3>VCARB 01</h3>
+                <div class="car-specs">
+                    <p><strong>Engine:</strong> Honda RBPT</p>
+                    <p>Rebranded AlphaTauri's first car</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Williams -->
+        <div class="team-card">
+            <div class="team-header">
+                <img src="{{ url_for('static', filename='images/williams.png' ) }}" alt="Williams Logo" class="team-logo">
+                <h2>Williams</h2>
+            </div>
+            <div class="car-card">
+                <img src="{{ url_for('static', filename='images/williams-car.jpg' ) }}" alt="Williams FW46" class="car-image">
+                <h3>FW46</h3>
+                <div class="car-specs">
+                    <p><strong>Engine:</strong> Mercedes</p>
+                    <p>Williams’ latest car building on 2023 progress</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <p>© 2025 Formula 1 Project</p>
+</footer>
+</body>
+</html>

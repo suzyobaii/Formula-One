@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Teams</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="{{ url_for('homepage') }}">
+        <img src="{{ url_for('static', filename='images/f1-logo.png') }}" alt="F1 Logo">
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('homepage') }}">Home</a></li>
+        <li><a href="{{ url_for('teams') }}">Teams</a></li>
+        <li><a href="{{ url_for('cars') }}">Cars</a></li>
+        <li><a href="{{ url_for('tracks') }}">Tracks</a></li>
+        <li><a href="{{ url_for('predictor') }}">Predictor</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <br/><br/>
+  <h1>F1 Drivers 2025</h1>
+  <br/><br/>
+  <div class="teams-grid">
+
+    <!-- McLaren -->
+    <div class="team-card">
+      <div class="team-header">
+        <img src="{{ url_for('static', filename='images/mclaren.png') }}" alt="McLaren Logo" class="team-logo">
+        <h2>McLaren</h2>
+      </div>
+    
+      <!-- Lando Norris -->
+      <div class="driver-card">
+        <img src="{{ url_for('static', filename='images/landonorris-racer.jpg') }}" alt="Lando Norris" class="driver-image">
+        <div class="driver-info">
+          <h3>Lando Norris</h3>
+          <p>Number: 4</p>
+          <p>Nationality: <img src="{{ url_for('static', filename='images/unitedkingdom-flag.jpg') }}" style="width: 55px; vertical-align: middle;"></p>
+        </div>
+      </div>
+    
+      <!-- Oscar Piastri -->
+      <div class="driver-card">
+        <img src="{{ url_for('static', filename='images/oscarpiastri-racer.jpg') }}" alt="Oscar Piastri" class="driver-image">
+        <div class="driver-info">
+          <h3>Oscar Piastri</h3>
+          <p>Number: 81</p>
+          <p>Nationality: <img src="{{ url_for('static', filename='images/australia-flag.jpg') }}" style="width: 55px; vertical-align: middle;"></p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Ferrari -->
+    <div class="team-card">
+      <div class="team-header">
+        <img src="{{ url_for('static', filename='images/ferrari.png') }}" alt="Ferrari Logo" class="team-logo">
+        <h2>Ferrari</h2>
+      </div>
+    
+      <!-- Charles Leclerc -->
+      <div class="driver-card">
+        <img src="{{ url_for('static', filename='images/charlesleclerc-racer.jpg') }}" alt="Charles Leclerc" class="driver-image">
+        <div class="driver-info">
+          <h3>Charles Leclerc</h3>
+          <p>Number: 16</p>
+          <p>Nationality: <img src="{{ url_for('static', filename='images/monaco-flag.jpg') }}" style="width: 55px; vertical-align: middle;"></p>
+        </div>
+      </div>
+    
+      <!-- Lewis Hamilton -->
+      <div class="driver-card">
+        <img src="{{ url_for('static', filename='images/lewishamilton-racer.jpg') }}" alt="Lewis Hamilton" class="driver-image">
+        <div class="driver-info">
+          <h3>Lewis Hamilton</h3>
+          <p>Number: 44</p>
+          <p>Nationality: <img src="{{ url_for('static', filename='images/unitedkingdom-flag.jpg') }}" style="width: 55px; vertical-align: middle;"></p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Red Bull Racing -->
+    <div class="team-card">
+      <div class="team-header">
+        <img src="{{ url_for('static', filename='images/redbull.png') }}" alt="Red Bull Racing Logo" class="team-logo">
+        <h2>Red Bull Racing</h2>
+      </div>
+    
+      <!-- Max Verstappen -->
+      <div class="driver-card">
+        <img src="{{ url_for('static', filename='images/maxverstappen-racer.jpg') }}" alt="Max Verstappen" class="driver-image">
+        <div class="driver-info">
+          <h3>Max Verstappen</h3>
+          <p>Number: 1</p>
+          <p>Nationality: <img src="{{ url_for('static', filename='images/netherlands-flag.jpg') }}" style="width: 55px; vertical-align: middle;"></p>
+        </div>
+      </div>
+    
+      <!-- Yuki Tsunoda -->
+      <div class="driver-card">
+        <img src="{{ url_for('static', filename='images/yukitsunoda-racer.jpg') }}" alt="Yuki Tsunoda" class="driver-image">
+        <div class="driver-info">
+          <h3>Yuki Tsunoda</h3>
+          <p>Number: 22</p>
+          <p>Nationality: <img src="{{ url_for('static', filename='images/japan-flag.jpg') }}" style="width: 55px; vertical-align: middle;"></p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Mercedes -->
+    <div class="team-card">
+      <div class="team-header">
+        <img src="{{ url_for('static', filename='images/mercedes.png') }}" alt="Mercedes Logo" class="team-logo">
+        <h2>Mercedes</h2>
+      </div>
+    
+      <!-- George Russell -->
+      <div class="driver-card">
+        <img src="{{ url_for('static', filename='images/georgerussel-racer.jpg') }}" alt="George Russell" class="driver-image">
+        <div class="driver-info">
+          <h3>George Russell</h3>
+          <p>Number: 63</p>
+          <p>Nationality: <img src="{{ url_for('static', filename='images/unitedkingdom-flag.jpg') }}" style="width: 55px; vertical-align: middle;"></p>
+        </div>
+      </div>
+    
+      <!-- Kimi Antonelli -->
+      <div class="driver-card">
+        <img src="{{ url_for('static', filename='images/kimiantonelli-racer.jpg') }}" alt="Kimi Antonelli" class="driver-image">
+        <div class="driver-info">
+          <h3>Kimi Antonelli</h3>
+          <p>Number: 12</p>
+          <p>Nationality: <img src="{{ url_for('static', filename='images/italy-flag.jpg') }}" style="width: 55px; vertical-align: middle;"></p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Alpine -->
+    <div class="team-card">
+      <div class="team-header">
+        <img src="{{ url_for('static', filename='images/alpine.png') }}" alt="Alpine Logo" class="team-logo">
+        <h2>Alpine</h2>
+      </div>
+    
+      <!-- Pierre Gasly -->
+      <div class="driver-card">
+        <img src="{{ url_for('static', filename='images/pierregasly-racer.jpg') }}" alt="Pierre Gasly" class="driver-image">
+        <div class="driver-info">
+          <h3>Pierre Gasly</h3>
+          <p>Number: 10</p>
+          <p>Nationality: <img src="{{ url_for('static', filename='images/france-flag.jpg') }}" style="width: 55px; vertical-align: middle;"></p>
+        </div>
+      </div>
+    
+      <!-- Jack Doohan -->
+      <div class="driver-card">
+        <img src="{{ url_for('static', filename='images/jackdoohan-racer.jpg') }}" alt="Jack Doohan" class="driver-image">
+        <div class="driver-info">
+          <h3>Jack Doohan</h3>
+          <p>Number: 7</p>
+          <p>Nationality: <img src="{{ url_for('static', filename='images/australia-flag.jpg') }}" style="width: 55px; vertical-align: middle;"></p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Aston Martin -->
+    <div class="team-card">
+      <div class="team-header">
+        <img src="{{ url_for('static', filename='images/astonmartin.png') }}" alt="Aston Martin Logo" class="team-logo">
+        <h2>Aston Martin</h2>
+      </div>
+    
+      <!-- Fernando Alonso -->
+      <div class="driver-card">
+        <img src="{{ url_for('static', filename='images/fernandoalonso-racer.jpg') }}" alt="Fernando Alonso" class="driver-image">
+        <div class="driver-info">
+          <h3>Fernando Alonso</h3>
+          <p>Number: 14</p>
+          <p>Nationality: <img src="{{ url_for('static', filename='images/spain-flag.jpg') }}" style="width: 55px; vertical-align: middle;"></p>
+        </div>
+      </div>
+    
+      <!-- Lance Stroll -->
+      <div class="driver-card">
+        <img src="{{ url_for('static', filename='images/lancestroll-racer.jpg') }}" alt="Lance Stroll" class="driver-image">
+        <div class="driver-info">
+          <h3>Lance Stroll</h3>
+          <p>Number: 18</p>
+          <p>Nationality: <img src="{{ url_for('static', filename='images/canada-flag.jpg') }}" style="width: 55px; vertical-align: middle;"></p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Williams -->
+    <div class="team-card">
+      <div class="team-header">
+        <img src="{{ url_for('static', filename='images/williams.png' ) }}" alt="Williams Logo" class="team-logo">
+        <h2>Williams</h2>
+      </div>
+    
+      <!-- Alex Albon -->
+      <div class="driver-card">
+        <img src="{{ url_for('static', filename='images/alexanderalbon-racer.jpg') }}" alt="Alex Albon" class="driver-image">
+        <div class="driver-info">
+          <h3>Alex Albon</h3>
+          <p>Number: 23</p>
+          <p>Nationality: <img src="{{ url_for('static', filename='images/thailand-flag.jpg') }}" style="width: 55px; vertical-align: middle;"></p>
+        </div>
+      </div>
+    
+      <!-- Carlos Sainz -->
+      <div class="driver-card">
+        <img src="{{ url_for('static', filename='images/carlossainz-racer.jpg') }}" alt="Carlos Sainz" class="driver-image">
+        <div class="driver-info">
+          <h3>Carlos Sainz</h3>
+          <p>Number: 55</p>
+          <p>Nationality: <img src="{{ url_for('static', filename='images/spain-flag.jpg') }}" style="width: 55px; vertical-align: middle;"></p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Racing Bulls -->
+    <div class="team-card">
+      <div class="team-header">
+        <img src="{{ url_for('static', filename='images/visarb.png') }}" alt="Racing Bulls Logo" class="team-logo">
+        <h2>Racing Bulls</h2>
+      </div>
+    
+      <!-- Isack Hadjar -->
+      <div class="driver-card">
+        <img src="{{ url_for('static', filename='images/isackhadjar-racer.jpg') }}" alt="Isack Hadjar" class="driver-image">
+        <div class="driver-info">
+          <h3>Isack Hadjar</h3>
+          <p>Number: 6</p>
+          <p>Nationality: <img src="{{ url_for('static', filename='images/france-flag.jpg') }}" style="width: 55px; vertical-align: middle;"></p>
+        </div>
+      </div>
+    
+      <!-- Liam Lawson -->
+      <div class="driver-card">
+        <img src="{{ url_for('static', filename='images/liamlawson-racer.jpg') }}" alt="Liam Lawson" class="driver-image">
+        <div class="driver-info">
+          <h3>Liam Lawson</h3>
+          <p>Number: 30</p>
+          <p>Nationality: <img src="{{ url_for('static', filename='images/newzealand-flag.jpg') }}" style="width: 55px; vertical-align: middle;"></p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Sauber (Stake F1 Team) -->
+    <div class="team-card">
+      <div class="team-header">
+        <img src="{{ url_for('static', filename='images/stake.png' ) }}" alt="Kick Sauber Logo" class="team-logo">
+        <h2>Kick Sauber</h2>
+      </div>
+
+      <!-- Gabriel Bortoleto -->
+      <div class="driver-card">
+        <img src="{{ url_for('static', filename='images/gabrielbortoleto-racer.jpg') }}" alt="Gabriel Bortoleto" class="driver-image">
+        <div class="driver-info">
+          <h3>Gabriel Bortoleto</h3>
+          <p>Number: 5</p>
+          <p>Nationality: <img src="{{ url_for('static', filename='images/brazil-flag.jpg') }}" style="width: 55px; vertical-align: middle;"></p>
+        </div>
+      </div>
+      <!-- Nico Hulkenberg -->
+      <div class="driver-card">
+        <img src="{{ url_for('static', filename='images/nicohulkenberg-racer.jpg') }}" alt="Nico Hulkenberg" class="driver-image">
+        <div class="driver-info">
+          <h3>Nico Hulkenberg</h3>
+          <p>Number: 27</p>
+          <p>Nationality: <img src="{{ url_for('static', filename='images/germany-flag.jpg') }}" style="width: 55px; vertical-align: middle;"></p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Haas F1 Team -->
+    <div class="team-card">
+      <div class="team-header">
+        <img src="{{ url_for('static', filename='images/haas.png') }}" alt="Haas Logo" class="team-logo">
+        <h2>Haas F1 Team</h2>
+      </div>
+    
+      <!-- Esteban Ocon -->
+      <div class="driver-card">
+        <img src="{{ url_for('static', filename='images/estebanocon-racer.jpg') }}" alt="Esteban Ocon" class="driver-image">
+        <div class="driver-info">
+          <h3>Esteban Ocon</h3>
+          <p>Number: 31</p>
+          <p>Nationality: <img src="{{ url_for('static', filename='images/france-flag.jpg') }}" style="width: 55px; vertical-align: middle;"></p>
+        </div>
+      </div>
+    
+      <!-- Oliver Bearman -->
+      <div class="driver-card">
+        <img src="{{ url_for('static', filename='images/oliverbearman-racer.jpg') }}" alt="Oliver Bearman" class="driver-image">
+        <div class="driver-info">
+          <h3>Oliver Bearman</h3>
+          <p>Number: 87</p>
+          <p>Nationality: <img src="{{ url_for('static', filename='images/unitedkingdom-flag.jpg') }}" style="width: 55px; vertical-align: middle;"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+<br/><br/><br/><br/>
+  <footer>
+    <p>© 2025 Formula 1 Project</p>
+  </footer>
+</body>
+</html>
